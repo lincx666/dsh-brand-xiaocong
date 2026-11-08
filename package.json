@@ -1,0 +1,42 @@
+{
+  "name": "dsh-brand-xiaocong",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSH 品牌定制：侧边栏与大厅的图标/文案、模型标签、空白会话标题",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "brand"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
