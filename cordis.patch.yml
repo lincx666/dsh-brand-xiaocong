@@ -1,0 +1,4 @@
+# 小葱助手：占用侧边栏品牌插槽（sidebar.brand.mark / sidebar.brand.name）。
+- insert:
+    - id: ui-brand-xiaocong
+      name: dsh-brand-xiaocong
